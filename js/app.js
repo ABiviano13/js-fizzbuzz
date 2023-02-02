@@ -3,7 +3,7 @@
 //1. Scrivere formula del ciclo for, con variabile contatore, condizione e incremento
 for (let i = 0; i < 100; i++) {
     //- stampare con console.log numeri da 1 a 100
-    console.log (i + 1);
+    // console.log (i + 1);
 
     //- far si che i multipli di 15 vengono chiamati FizzBuzz
     let multiples15 = (i + 1) % 15;
@@ -19,6 +19,8 @@ for (let i = 0; i < 100; i++) {
         console.log ('Buzz');
     } else if (multiples3 === 0) {
         console.log ( 'Fizz');
-	};
+	} else{
+        console.log (i + 1);
+    }
 };
   
