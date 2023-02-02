@@ -1,5 +1,7 @@
 //CREARE UN CICLO FOR
-
+let container = document.createElement('p')
+console.log(container.outerHTML)
+container.innerHTML += container.outerHTML
 //1. Scrivere formula del ciclo for, con variabile contatore, condizione e incremento
 for (let i = 0; i < 100; i++) {
     //- stampare con console.log numeri da 1 a 100
@@ -23,9 +25,5 @@ for (let i = 0; i < 100; i++) {
 	} else{
         console.log (i + 1);
     }
+
 };
-
-
-// let container = document.createElement('p')
-// console.log(container.outerHTML)
-// container.innerHTML += container.outerHTML
