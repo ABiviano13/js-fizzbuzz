@@ -14,11 +14,11 @@ for (let i = 0; i < 100; i++) {
 
     // Stampare con console.log i multipli con le denominazioni distintive
     if (multiples15 === 0) {
-        console.log (multiples15, 'FizzBuzz');
+        console.log ('FizzBuzz');
 	} else if (multiples5 === 0){
-        console.log (multiples5, 'Buzz');
+        console.log ('Buzz');
     } else if (multiples3 === 0) {
-        console.log (multiples3, 'Fizz');
+        console.log ( 'Fizz');
 	};
 };
   
