@@ -1,29 +1,34 @@
 //CREARE UN CICLO FOR
-let container = document.createElement('p')
-console.log(container.outerHTML)
-container.innerHTML += container.outerHTML
+let gridElement = document.getElementById('grid')
 //1. Scrivere formula del ciclo for, con variabile contatore, condizione e incremento
 for (let i = 0; i < 100; i++) {
     //- stampare con console.log numeri da 1 a 100
-    // console.log (i + 1);
+    let indice = i + 1
+    // console.log (indice);
 
-    //- far si che i multipli di 15 vengono chiamati FizzBuzz
-    let multiples15 = (i + 1) % 15;
-    //- far si che i multipli di 5 vengono chiamati Buzz
-    let multiples5 = (i + 1) % 5;
-    //-far si che i multipli di 3 vengono chiamati Fizz
-    let multiples3 = (i + 1) % 3;
+    //- far si che i multipli di 15
+    let multiples15 = indice % 15;
+    //- far si che i multipli di 5
+    let multiples5 = indice % 5;
+    //-far si che i multipli di 3
+    let multiples3 = indice % 3;
+
+    //creiamo una variabile d'appoggio
+    let message = indice;
 
 
-    // Stampare con console.log i multipli con le denominazioni distintive
+    // Stampare i multipli con le denominazioni distintive
     if (multiples15 === 0) {
-        console.log ('FizzBuzz');
+        //vengono chiamati FizzBuzz
+        message = 'FizzBuzz'
 	} else if (multiples5 === 0){
-        console.log ('Buzz');
+        //vengono chiamati Buzz
+        message = 'Buzz';
     } else if (multiples3 === 0) {
-        console.log ( 'Fizz');
-	} else{
-        console.log (i + 1);
-    }
+        //vengono chiamati Fizz
+        message = 'Fizz';
+	}
 
+    let divString = '<div>' + message + '</div>'
+    gridElement.innerHTML += divString 
 };
